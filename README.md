@@ -1,0 +1,2 @@
+# coreutils
+This project aims to recreate some basic coreutils programs like: **ls, rm, cp, mv, mkdir, etc.** However this is **NOT** a replacement for the standard coreutils on your system, it's just an experiment.

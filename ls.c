@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <dirent.h>
 
-typedef struct dirent dirent;
-
 int main(int argc, char **argv)
 {
     if (argc < 2)
@@ -15,7 +13,7 @@ int main(int argc, char **argv)
     for (int i = 1; i < argc; i++)
     {
         DIR *dir;
-        dirent *dir_struct;
+        struct dirent *dir_struct;
         dir = opendir(argv[i]);
 
         if (!dir)
